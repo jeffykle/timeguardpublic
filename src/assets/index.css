@@ -1,0 +1,167 @@
+/** { border: 1px solid black; }*/
+
+i{
+  vertical-align:middle;
+} 
+.rotate {
+  animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+body {
+  background-color: #222222;
+}
+#app {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #CACACA;
+  margin-top: 60px;
+}
+
+a, pre, p, .light-text {
+    color: #CACACA;
+}
+.grow { transition: all .1s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+
+.timer {
+  color: #252525;
+  border-radius: 25px ;
+
+}
+
+.bi-question {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.main-logo {
+    width:50vw;
+    max-width: 20em;
+    transition: all 100ms linear;
+}
+.small-logo {
+    max-width: 10vw;
+}
+
+
+@media (max-width: 800px) {
+    .main-logo {
+        max-width: 10vw;
+    }
+      
+}
+
+.brand {
+    transition: all 100ms linear;
+}
+
+
+.edit-time {
+    font-family: 'Roboto Mono', monospace;
+    /*size: 8;*/
+}
+
+.edit-time-input {
+    border: none;
+    display: inline;
+    font-family: inherit;
+    font-size: inherit;
+    padding: none;
+    width: auto;
+}
+
+.view-time {
+    text-align: top;
+}
+.bi-pencil-fill {
+    vertical-align: top;
+    font-size: .5em;
+}
+.timer-text, .view-time {
+    white-space: nowrap;
+}
+
+.expired {
+  animation: blinker 1.25s linear infinite;
+  font-weight: bold;
+  color: red;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: .2;
+  }
+}
+
+
+
+@media (max-width: 1300px) {
+
+    /*Manage Display Headers for Mobile Devices*/
+
+    .display-1 {
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: 1.0;
+    }
+
+    .display-2 {
+        font-size: 3.25rem;
+        font-weight: 300;
+        line-height: 1.0;
+    }
+
+    .display-3 {
+        font-size: 2.5rem;
+        font-weight: 300;
+        line-height: 1.0;
+    }
+
+    .display-4 {
+        font-size: 2rem;
+        font-weight: 300;
+        line-height: 1.0;
+    }
+}
+
+
+@media (max-width: 900px) {
+
+    /*Manage Display Headers for Mobile Devices*/
+
+    .display-1 {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.0;
+    }
+
+    .display-2 {
+        font-size: 2.75rem;
+        font-weight: 300;
+        line-height: 1.0;
+    }
+
+    .display-3 {
+        font-size: 1.25rem;
+        font-weight: 300;
+        line-height: 1.0;
+    }
+
+    .display-4 {
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 1.0;
+    }
+}
+
